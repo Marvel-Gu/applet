@@ -1,0 +1,26 @@
+<view class="top_contain">
+      <view class="des_contain">
+            <view class="name">Levit</view>
+            <view class="sign">但行好事,莫问前程</view>
+      </view>
+      <view class="avator_box">
+            <image class="avator" src="/images/tou.png"></image>
+      </view>
+</view>
+<view class="contain">
+      <view class="title">程序简介</view>
+      <view class="description">
+            <text space="emsp" decode="{{ true }}">{{des}}</text>
+      </view>
+      <view class="title">联系方式</view>
+      <view class="description">
+            <view class="tip" bindtap="copy" data-copy="www.levitategu.cn" data-name="链接">
+                  <view>blog</view>:
+                  <text>www.levitategu.cn</text>
+            </view>
+            <view class="tip" bindtap="copy" data-copy="https://github.com/Marvel-Gu" data-name="链接">
+                  <view>github</view>:
+                  <text>https://github.com/Marvel-Gu</text>
+            </view>
+      </view>
+</view>
