@@ -3,17 +3,16 @@ var data = {
       env: 'cloud1-7gk3st9c62b3263c',
       //分享配置
       share_title: '西安电子科技大学二手书',
-      share_img: '/images/poster.jpg', //可以是网络地址，本地文件路径要填绝对位置
-      share_poster:'',//必须为网络地址
+      share_img: '/images/poster.jpg', 
+      share_poster:'',
       //客服联系方式
       kefu: {
             weixin: '',
             qq: '',
-            gzh: '', //公众号二维码必须为网络地址
-            phone: '' //如果你不设置电话客服，就留空
+            gzh: '', 
+            phone: ''
       },
       //默认启动页背景图，防止请求失败完全空白 
-      //可以是网络地址，本地文件路径要填绝对位置
       bgurl: '/images/startBg.jpg',
       //校区
       campus: [{
@@ -33,7 +32,7 @@ var data = {
                   id: 3
             },
       ],
-      //配置学院，建议不要添加太多，不然前端不好看
+      //书籍类型
       college: [{
                   name: '通用',
                   id: -1
@@ -108,7 +107,7 @@ var data = {
             },
       ],
 }
-//下面的就别动了
+
 function formTime(creatTime) {
       let date = new Date(creatTime),
             Y = date.getFullYear(),

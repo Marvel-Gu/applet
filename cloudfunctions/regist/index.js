@@ -10,7 +10,7 @@ const wxurl = 'https://api.weixin.qq.com';
 var WXBizDataCrypt = require('./RdWXBizDataCrypt') // 用于手机号解密
 cloud.init()
 // 云函数入口函数
-exports.main = async(event, context) => {
+exports.main = async(event) => {
       const app = new TcbRouter({
             event
       });

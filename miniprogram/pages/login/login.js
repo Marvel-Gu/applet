@@ -81,9 +81,6 @@ Page({
                   }
             })
       },
-      emInput(e) {
-            this.data.email = e.detail.value;
-      },
       getUserInfo(e) {
             let that = this;
             console.log(e);

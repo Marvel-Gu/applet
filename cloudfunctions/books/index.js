@@ -1,6 +1,6 @@
-//此处填写在极速书籍那边申请的接口密钥
-//https://www.jisuapi.com/api/isbn/
-const appkey = 'xxxxxxxxxxxxx'; 
+const aurl = ''//调用接口的地址
+const appkey = ''; //秘钥
+
 
 //
 
@@ -18,10 +18,10 @@ exports.main = async(event, context) => {
       app.router('bookinfo', async(ctx) => {
             ctx.body = new Promise(resolve => {
                   rq({
-                        url: 'https://api.jisuapi.com/isbn/query?appkey=' + appkey + '&isbn=' + event.isbn,
+                        url: aurl + appkey + '&isbn=' + event.isbn,
                         method: "GET",
                         json: true,
-                  }, function(error, response, body) {
+                  }, function(body) {
                         resolve({
                               body: body
                         })
